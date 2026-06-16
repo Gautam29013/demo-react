@@ -1,5 +1,15 @@
-function App() {
-  return <h1>Hello World</h1>;
-}
+import React from 'react';
+import Header from "./components/header";
+import Main from "./components/main";
 
-export default App; 
+
+
+const App = () => {
+  return <div>
+    <Header />
+    <Main />
+
+  </div>;
+};
+
+export default App;
