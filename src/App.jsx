@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Main from "./components/main";
 import Footer from './components/footer';
 import Weather from './components/weather';
+import UserStatus from './components/userstatus';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <Main />
     <Footer />
     <Weather />
+    <UserStatus isLoggedIn={true} isadmin={true} />
   </div>;
 };
 
