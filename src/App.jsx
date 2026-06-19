@@ -15,5 +15,4 @@ const App = () => {
     <UserStatus isLoggedIn={true} isadmin={true} />
   </div>;
 };
-
-export default App;
+export default App; 
