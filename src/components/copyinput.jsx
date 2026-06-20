@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const CopyInput = () => {
     const [inputValue, setInputValue] = useState('');
     const [copied, setCopied] = useState(false);
     
     const handleCopy = () => {
-        navigator.clipboard.writeText(inputValue).then(() => {  
-            setcopied(true);
+        navigator.clipboard.writeText(inputValue).then(() => {
+            setCopied(true);
             setTimeout(() => setCopied(false), 2000);
         })
     }
